@@ -1,0 +1,17 @@
+<app-header></app-header>
+<main>
+    <div class="divPadre">
+        <div *ngIf="character" class="divPadre__hijo" >
+            <img class="divPadre__hijo--img" src="{{character.image}}" alt="">
+            <div class="divPadre__hijo--divDatos">
+                <h2 class="divPadre__hijo--divDatos--name">{{character.name}}</h2>
+                <p class="divPadre__hijo--divDatos--resto">{{character.status}}</p>
+                <p class="divPadre__hijo--divDatos--resto">{{character.species}}</p>
+                <p class="divPadre__hijo--divDatos--resto">{{character.gender}}</p>
+            </div>
+            
+        </div>
+    </div>
+</main>
+<app-footer></app-footer>
+

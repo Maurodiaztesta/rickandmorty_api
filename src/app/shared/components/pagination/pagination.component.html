@@ -1,0 +1,6 @@
+
+<div class="botonesPaginado">
+    <button [ngClass]="paginaActual <= 1 ? 'botonesPaginado__anteriorNO' : 'botonesPaginado__AS'"(click)="changePage(paginaActual - 1)">PREVIOUS</button>
+    <button class="botonesPaginado__actual">{{paginaActual}}</button>
+    <button [ngClass]="paginaActual >= 42 ? 'botonesPaginado__siguienteNO' : 'botonesPaginado__AS'" (click)="changePage(paginaActual + 1)">NEXT</button>
+</div>

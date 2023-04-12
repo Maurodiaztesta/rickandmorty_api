@@ -1,0 +1,26 @@
+main{
+    width: 100%;
+    .portal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &__logo{
+            margin-top: 10px;
+            width: 1000px;
+        }
+        &__portal{
+            width: 500px;
+            margin: 40px 0px;
+            transition: transform .5s; 
+        }
+        &__portal:hover{
+            transform: scale(1.1); 
+        }
+        &__texto{
+            margin: 40px;
+            font-size: 30px;
+            color: #3babbe;
+        }
+    }
+}

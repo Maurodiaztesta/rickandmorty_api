@@ -1,0 +1,36 @@
+main{
+    width: 100%;
+    .divPadre{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__hijo{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            background-color: #F2B69A;
+            border-radius:2em;
+            &--divDatos{
+                margin: 20px;
+                text-align: end;
+                text-align: center;
+                color: white;
+                &--name{
+                    font-size: 50px;
+                }
+                &--resto{
+                    font-size: 30px;
+                }
+            }
+            &--img{
+                border-radius:2em;
+                margin: 20px;
+                width: 400px;
+            }
+        }
+    }
+}

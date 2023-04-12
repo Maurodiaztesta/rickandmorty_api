@@ -1,0 +1,15 @@
+<app-header></app-header>
+<main>
+  <app-buscador (emitNameOut)="buscado($event)"></app-buscador>
+  <app-pagination (emitPage)="setPage($event)"></app-pagination>
+  <div class="divPadre">
+    <a routerLink="/characters/{{character.id}}" class="divPadre__Hijo" *ngFor="let character of characters">
+      <div>
+        <img class="divPadre__Hijo--img" src="{{character.image}}" alt="">
+        <h2 class="divPadre__Hijo--name">{{character.name}}</h2>
+      </div>
+    </a>
+  </div>
+</main>
+<app-footer></app-footer>
+

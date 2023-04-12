@@ -1,0 +1,23 @@
+<app-header></app-header>
+<main>
+    <form class="form" [formGroup]="contactForm" (ngSubmit)="submit()">
+        <label class="form__label">
+            Email
+            <input placeholder="Enter your email" class="form__label--input" type="email" formControlName="email">
+        </label>
+    
+        <label class="form__label">
+            Name
+            <input placeholder="Enter your name" class="form__label--input" type="text" formControlName="name">
+        </label>
+    
+        <label class="form__label">
+            Age
+            <input placeholder="Enter your age" class="form__label--input" type="number" formControlName="age">
+        </label>
+        <button class="form__button">Enviar</button>
+    </form>
+</main>
+<app-footer></app-footer>
+
+<!-- <p>para continuar: video min 56</p> -->
